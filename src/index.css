@@ -569,14 +569,11 @@ footer p a {
   color: #cd97e9;
   transition: all 10ms ease-in;
   border-radius: 0.5em;
+  text-align: center;
 }
 
 footer p a:hover {
-  font-weight: 400;
-  background-color: #cd97e9;
-  padding: 5px;
-  border-radius: 1em;
-  transition: all 10ms ease-out;
+  letter-spacing: 0.1px;
 }
 
 /* media querys mobile */
@@ -597,42 +594,41 @@ footer p a:hover {
   .header {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 0.25em;
-    height: 12dvh;
+    height: 8dvh;
     background-color: #fffcf5;
     border-right: none;
-    padding: 0.5em;
+    padding: 1.252em 1em 0.5em 1em;
     margin-bottom: 0.5rem;
     position: relative;
   }
 
   .header .logo {
-    flex-grow: 1;
-    font-size: 1.25em;
+    flex-grow: 0;
+    font-size: 1.025em;
     font-weight: 500;
     text-align: center;
   }
 
   .navbar {
-    flex-grow: 0;
+    flex-grow: 2;
     flex-shrink: 0;
     flex-wrap: wrap;
   }
 
   .navbar ul {
-    justify-content: space-around;
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 0.25rem;
+    gap: 0.5rem;
     flex-wrap: wrap;
   }
 
   .navbar ul li a {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 
   footer,
@@ -664,7 +660,7 @@ footer p a:hover {
   .container-spotlight {
     overflow-x: hidden;
     overflow-y: auto;
-    padding: 1em 0.5em;
+    padding: 1em 1.25em;
   }
 
   section.video {
@@ -697,7 +693,7 @@ footer p a:hover {
 
   .spotlight-card {
     border-radius: 0.5em;
-    border: 1px solid #1b1b1b;
+    /*border: 1px solid #1b1b1b;*/
     text-decoration: none;
     color: #1b1b1b;
     padding: 0;
@@ -725,7 +721,7 @@ footer p a:hover {
   }
 
   .spotlight-card-info {
-    width: 95%;
+    width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -738,17 +734,17 @@ footer p a:hover {
   .spotlight-card h3.spotlight-title,
   .container-radio h3.sesh-title {
     flex-shrink: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .spotlight-card h4.spotlight-date,
   .container-radio h4.sesh-date {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .container-radio ul.sesh-genres,
   .container-radio ul.sesh-genre {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .sc-button-container {
@@ -826,9 +822,8 @@ footer p a:hover {
   }
 
   .page p {
-    padding-right: 0.25em;
+    padding: 0;
     margin-bottom: 1em;
-    padding-left: 0.25em;
     font-size: 1em;
   }
 
